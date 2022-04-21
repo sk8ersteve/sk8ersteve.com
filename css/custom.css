@@ -1,3 +1,11 @@
 body {
-    font-family: 'Open Sans';
+    background-color: black;
+    color: white;
+}
+
+.super {
+    /* font-size: 200px; */
+    /* font-size: 13.5vw; */
+    font-size: 24vw;
+    font-weight: bold;
 }
