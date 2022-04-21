@@ -4,8 +4,26 @@ body {
 }
 
 .super {
-    /* font-size: 200px; */
-    /* font-size: 13.5vw; */
+    /* font-size: 240px; */
     font-size: 24vw;
     font-weight: bold;
+}
+
+span {
+    font-size: 40px;
+}
+
+input {
+    border: 0px;
+    border-bottom: 1px solid red;
+    padding-top: 5px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+
+@media (min-width: 992px) {
+    .super {
+        font-size: 240px;
+    }
 }
