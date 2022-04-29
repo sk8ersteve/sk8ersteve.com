@@ -7,10 +7,11 @@ body {
     /* font-size: 240px; */
     font-size: 24vw;
     font-weight: bold;
+    /* text-align: right; */
 }
 
 span {
-    font-size: 40px;
+    font-size: 4vw;
 }
 
 input {
@@ -19,11 +20,16 @@ input {
     padding-top: 5px;
     background-color: black;
     color: white;
-    font-size: 40px;
+    font-size: 4vw;
+    max-width: 90%;
 }
 
 @media (min-width: 992px) {
     .super {
         font-size: 240px;
+    }
+
+    span, input {
+        font-size: 80px;
     }
 }
