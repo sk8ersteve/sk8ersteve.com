@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNQG28RSHE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZNQG28RSHE');
+    </script>
+    <!-- / Google tag -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Personal website of Stephen Thomas-Dorin">
     <meta name="author" content="Stephen Thomas-Dorin">
 
-    <!-- <link rel="stylesheet" href="css/custom.css"> -->
-    <style type="text/css">
-      body {
-        margin: 40px auto;
-        max-width: 650px;
-        line-height: 1.6;
-        font-size: 18px;
-        color: #444;
-        background-color: #f2f2f2;
-        padding: 0 10px;
-      }
-      h1, h2, h3 {
-        line-height: 1.2;
-      }
-    </style>
-
-    <script>
-      function toggleDarkMode() {
-        var checkBox = document.getElementById("darkMode");
-        if (darkMode.checked) {
-          document.body.style.background = "#111";
-          document.body.style.color = "#f2f2f2";
-        } else {
-          document.body.style.background = "#f2f2f2";
-          document.body.style.color = "#333";
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/custom.js"></script>
 
     <title>Home of sk8er_steve</title>
 
@@ -41,26 +25,24 @@
   <body>
     <header>
       <h1>Hi. I'm Steve</h1>
-      <aside>
-        Welcome to my website! Click here
-        <input type="checkbox" id="darkMode" onclick="toggleDarkMode()">
-        to enable dark mode.
-      </aside>
     </header>
-    <h2>Here is a red box</h2>
-    <div style="height: 200px; background-color: red;"></div>
     <p>
-      just because I like red so much. I've resisted the urge to make this
-      whole website red.
+      I do skate but that's not really why I made this website. I'm actually
+      still working on that, but until then, here's a red box:
+      <div id="redBox"></div>
     </p>
-    <h2>About me</h2>
-    <p>
-      
+    <!-- <p>
+      I do skate but that's not really why I made this website. Here is some
+      hopefully cool stuff I've worked on:
     </p>
-    <!-- <h2>My philosophy:</h2>
-    <p>
-      I believe in spreading love and positivity. I enjoy good code event if I
-      don't always write good code myself. 
-    </p> -->
+    <ul>
+      <li>
+        <a href="investing.html">Investing Simulator</a>
+      </li>
+    </ul> -->
+    <footer>
+        <input type="checkbox" id="darkMode" onclick="toggleDarkMode()" checked>
+        Dark mode
+    </footer>
   </body>
 </html>

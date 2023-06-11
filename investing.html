@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal website of Stephen Thomas-Dorin">
+    <meta name="author" content="Stephen Thomas-Dorin">
+
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/custom.js"></script>
+
+    <script>
+      function gaussianRandom(mean=0, stdev=1) {
+        const u = 1 - Math.random(); // Converting [0,1) to (0,1]
+        const v = Math.random();
+        const z = Math.sqrt( -2.0 * Math.log( u ) ) * Math.cos( 2.0 * Math.PI * v );
+        // Transform to the desired mean and standard deviation:
+        return z * stdev + mean;
+      }
+
+      function generateFixedReturn() {
+        var num_years = 40;
+        var average_return = 0.1;
+        var money = 10000;
+
+        for (var i = 0; i < 40; i++) {
+          money += money * average_return;
+        }
+      }
+
+      function generateGaussianReturn() {
+        var num_years = 40;
+        var average_return = 0.1;
+        var stdev = 0.15;
+        var money = 10000;
+
+        for (var i = 0; i < 40; i++) {
+          var ret = gaussianRandom(average_return, stdev);
+          money += money * ret;
+        }
+      }
+    </script>
+
+    <title>Investing Simulator</title>
+
+  </head>
+  <body>
+    <header>
+      <h1>Investing Simulator</h1>
+    </header>
+    <p>
+      Conventional wisdom says you should park your long-term savings in an
+      index fund which tracks a market index like the S&P 500. These are well
+      known to provide a certain average yearly return with some variance year
+      to year. We're going to attempt to test whether that is really a good
+      idea or not.
+    </p>
+
+    <p>
+      For starters, let's get a control result by assuming no variance:
+    </p>
+
+    <ul>
+      <li>Principle: $10,000</li>
+      <li>Yearly return: 10%</li>
+      <li>Time: 40 years</li>
+      <li>
+        <button onClick="generateFixedReturn">generate returns</button>
+      </li>
+    </ul>
+
+    <!-- <button onClick="generateFixedReturn">generate returns</button> -->
+
+    <footer>
+        <!-- <input type="checkbox" id="darkMode" onclick="toggleDarkMode()" checked>
+        Dark mode -->
+        <!-- <div id="redBox"></div> -->
+    </footer>
+  </body>
+</html>
