@@ -17,12 +17,12 @@ ul {
 }
 
 a:link {
-  color: greenyellow;
+  color: #8ff;
   text-decoration: none;
 }
 
 a:visited {
-  color: #ccc;
+  color: #f8f;
   text-decoration: none;
 }
 
