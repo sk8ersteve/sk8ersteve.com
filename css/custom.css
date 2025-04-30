@@ -2,6 +2,7 @@ body {
   margin: 40px auto;
   max-width: 650px;
   line-height: 1.6;
+  font-family: Skaters;
   font-size: 18px;
   color: #f2f2f2;
   background-color: #111;
@@ -31,3 +32,7 @@ a:visited {
   width: 40px;
   background-color: red;
 }
+
+@font-face {
+    font-family: Skaters;
+    src: url(fonts/Skaters.ttf);
